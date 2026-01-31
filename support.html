@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Nexus Trails</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nexus Trails</h1>
+        </header>
+
+        <main>
+            <section class="donation-section">
+                <h2>Support Our Mission</h2>
+                <p>Help us continue providing great service to our community</p>
+                <a href="#" class="btn btn-primary donation-btn" id="donationBtn">
+                    ❤️ Donate Now
+                </a>
+                <p class="donation-note">Your support makes a difference!</p>
+            </section>
+
+            <section class="report-bug-section">
+                <h2>Report a Bug</h2>
+                <p>Found an issue? Let us know so we can fix it!</p>
+                <button class="btn btn-secondary" onclick="reportBug()">Report Bug</button>
+            </section>
+
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I get started?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can download extensions from the Chrome Web Store.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How can I report a bug?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>By clicking the report button above and filing the Google form.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products-section">
+                <h2>Try More of Our Products</h2>
+                <p>Discover our range of innovative solutions</p>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="yt-hide-search-logo.png" alt="YT Hide Search Suggestions" class="product-logo">
+                        <h3>YT Hide Search Suggestions</h3>
+                        <p>Chrome extension for YouTube</p>
+                    </div>
+                    <div class="product-card">
+                        <h3>Product 2</h3>
+                        <p>Coming soon...</p>
+                    </div>
+                    <div class="product-card">
+                        <h3>Product 3</h3>
+                        <p>Coming soon...</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Nexus Trails. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
