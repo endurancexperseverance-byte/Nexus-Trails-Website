@@ -18,7 +18,7 @@ function toggleFaq(element) {
 }
 
 // Configuration - Add your links here
-const DONATION_LINK = ""; // Add your donation link here
+const DONATION_LINK = "https://ko-fi.com/nexustrails"; // Add your donation link here
 const FEEDBACK_FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLScy2u94TG4lAwmL_S8HOtx5NxVBoNprn-M0HMWHd93VU6BFTg/viewform?usp=publish-editor"; // Add your feedback form link here
 
 // Report Bug Function
@@ -76,3 +76,4 @@ window.addEventListener('load', function() {
         }, index * 100);
     });
 });
+
