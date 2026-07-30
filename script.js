@@ -73,10 +73,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (product4Card) {
-        product1Card.addEventListener('click', function(e) {
+        product4Card.addEventListener('click', function(e) {
             e.preventDefault();
-            if (PRODUCT1_LINK) {
-                window.open(PRODUCT1_LINK, '_blank');
+            if (PRODUCT4_LINK) {
+                window.open(PRODUCT4_LINK, '_blank');
             } else {
                 alert('The link will be added soon!');
             }
