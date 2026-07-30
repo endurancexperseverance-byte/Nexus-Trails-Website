@@ -23,7 +23,7 @@ const FEEDBACK_FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLScy2u94TG4l
 const PRODUCT1_LINK = "https://chromewebstore.google.com/detail/kecnkcajcgandpnpnblmlkopcnbfcoka?utm_source=item-share-cb"; // Add your YT Hide Search Suggestions extension link here
 const PRODUCT2_LINK = "https://chromewebstore.google.com/detail/efhpeobfakahidjbpofklfalbppdbaod?utm_source=item-share-cb"; // Add your Stay Aware - Mindful Browsing extension link here
 const PRODUCT4_LINK = "https://chromewebstore.google.com/detail/jocjnggbgbphjpkhfpakomdapijebkic?utm_source=item-share-cb"; // Add your Stay Aware - Mindful Browsing extension link here
-//const PRODUCT3_LINK = "https://chromewebstore.google.com/detail/efhpeobfakahidjbpofklfalbppdbaod?utm_source=item-share-cb"; // Add your Stay Aware - Mindful Browsing extension link here
+const PRODUCT3_LINK;// Add your Stay Aware - Mindful Browsing extension link here
 
 // Report Bug Function
 function reportBug() {
@@ -69,6 +69,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.open(PRODUCT2_LINK, '_blank');
             }
             // If empty, do nothing (no redirect)
+        });
+    }
+
+    if (product3Card) {
+        product3Card.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (PRODUCT3_LINK) {
+                window.open(PRODUCT3_LINK, '_blank');
+            } else {
+                alert('The link will be added soon!');
+            }
         });
     }
 
