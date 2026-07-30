@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    const product3Card = document.getElementById('product3Card');
     if (product3Card) {
         product3Card.addEventListener('click', function(e) {
             e.preventDefault();
@@ -83,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    const product3Card = document.getElementById('product3Card');
     if (product4Card) {
         product4Card.addEventListener('click', function(e) {
             e.preventDefault();
