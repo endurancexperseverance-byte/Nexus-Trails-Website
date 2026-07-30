@@ -22,8 +22,8 @@ const DONATION_LINK = "https://ko-fi.com/nexustrails"; // Add your donation link
 const FEEDBACK_FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLScy2u94TG4lAwmL_S8HOtx5NxVBoNprn-M0HMWHd93VU6BFTg/viewform?usp=publish-editor"; // Add your feedback form link here
 const PRODUCT1_LINK = "https://chromewebstore.google.com/detail/kecnkcajcgandpnpnblmlkopcnbfcoka?utm_source=item-share-cb"; // Add your YT Hide Search Suggestions extension link here
 const PRODUCT2_LINK = "https://chromewebstore.google.com/detail/efhpeobfakahidjbpofklfalbppdbaod?utm_source=item-share-cb"; // Add your Stay Aware - Mindful Browsing extension link here
-const PRODUCT3_LINK = "https://chromewebstore.google.com/detail/jocjnggbgbphjpkhfpakomdapijebkic?utm_source=item-share-cb"; // Add your Stay Aware - Mindful Browsing extension link here
-//const PRODUCT4_LINK = "https://chromewebstore.google.com/detail/efhpeobfakahidjbpofklfalbppdbaod?utm_source=item-share-cb"; // Add your Stay Aware - Mindful Browsing extension link here
+const PRODUCT4_LINK = "https://chromewebstore.google.com/detail/jocjnggbgbphjpkhfpakomdapijebkic?utm_source=item-share-cb"; // Add your Stay Aware - Mindful Browsing extension link here
+//const PRODUCT3_LINK = "https://chromewebstore.google.com/detail/efhpeobfakahidjbpofklfalbppdbaod?utm_source=item-share-cb"; // Add your Stay Aware - Mindful Browsing extension link here
 
 // Report Bug Function
 function reportBug() {
@@ -69,6 +69,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.open(PRODUCT2_LINK, '_blank');
             }
             // If empty, do nothing (no redirect)
+        });
+    }
+
+    if (product4Card) {
+        product1Card.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (PRODUCT1_LINK) {
+                window.open(PRODUCT1_LINK, '_blank');
+            } else {
+                alert('The link will be added soon!');
+            }
         });
     }
 });
