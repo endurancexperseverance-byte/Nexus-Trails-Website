@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    const product4Card = document.getElementById('product3Card');
+    const product4Card = document.getElementById('product4Card');
     if (product4Card) {
         product4Card.addEventListener('click', function(e) {
             e.preventDefault();
